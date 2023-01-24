@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/users", (req, res) => {
-  const query = "select * from mock_data";
+  const query = "select * from api";
 
   pool.query(query, (err, results) => {
     if (err) {
